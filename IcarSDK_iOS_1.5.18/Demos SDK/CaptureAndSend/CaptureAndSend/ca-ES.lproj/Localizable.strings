@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  CaptureAndSend
+
+  Created by Enric Vergara on 23/1/17.
+  Copyright © 2017 icarvision. All rights reserved.
+*/
+
+"icar_sdk_placeIdWithinTheBox"      = "[ Col·loqui el ID dintre de la caixa ]";
+"icar_sdk_notEnoughLight"           = "Insuficient llum...";
+"icar_sdk_searching_mrz"            = "Detectant MRZ";
+"icar_sdk_detected_mrz"             = "MRZ trobat!";
+"icar_sdk_saving_photo_capture"     = "Desant la fotografia capturada . . ."; //Unused.
+"icar_sdk_btn_capture"              = "Capturar";
+"icar_sdk_btn_cancel"               = "Cancel·lar";
+"icar_sdk_btn_ok"                   = "D'acord";
+"icar_sdk_stay_still"               = "Mantinguis quiet, la imatge s'està capturant.";
+"icar_sdk_placeDocInsideBox"        = "Col·loqui el document dintre la caixa";
+"icar_sdk_please_come_closer"       = "SI US PLAU, <strong>ACOSTAT</strong>";
+"icar_sdk_ok_stay_still"            = "D'ACORD!, MANTINGUIS QUIET";
+"icar_sdk_place_face_inside"        = "<strong>COL·LOQUI LA CARA DINTRE</strong>";
+"icar_sdk_picture_token"            = "FOTO CAPTURADA"; //Unused.
+"icar_sdk_lbl_no_credits"           = "ICAR_SDK_ERROR: Sense crèdits.  Si us plau contacti amb IcarVision";
+"icar_sdk_go_back"                  = "SI US PLAU, <strong>VAGI ENRERA</strong>";
+"icar_sdk_blink_eyes"               = "SI US PLAU, <strong>PARPELLEGI ELS ULLS</strong>";
+"icar_sdk_accept_thanks"            = "<strong>ACCEPTAT GRÀCIES</strong>";
+"icar_sdk_turn_head_left_right"     = "GIRI EL CAP ESQUERRA I DRETA"; //Unused.
+"icar_sdk_please_look_front"        = "SI US PLAU, MIRI ENDAVANT"; //Unused.
+"icar_sdk_turn_head_oher_side"      = "GIRI EL CAP CAP A L'ALTRE COSTAT"; //Unused.
+"icar_sdk_please_be_serious"        = "SI US PLAU, ESTIGUI SERIÓS"; //Unused.
+"icar_sdk_big_smile"                = "GRAN SOMRIURE! :-)"; //Unused.
+"icar_sdk_yes"                      = "SÍ";
+"icar_sdk_not"                      = "NO";

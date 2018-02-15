@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  CaptureAndSend
+
+  Created by Enric Vergara on 23/1/17.
+  Copyright © 2017 icarvision. All rights reserved.
+*/
+
+"icar_sdk_placeIdWithinTheBox"      = "[ Place the ID within the Box ]";
+"icar_sdk_notEnoughLight"           = "Not enough light...";
+"icar_sdk_searching_mrz"            = "Searching MRZ";
+"icar_sdk_detected_mrz"             = "MRZ found!";
+"icar_sdk_saving_photo_capture"     = "Saving photo capture . . .";
+"icar_sdk_btn_capture"              = "Capture";
+"icar_sdk_btn_cancel"               = "Cancel";
+"icar_sdk_btn_ok"                   = "Ok";
+"icar_sdk_stay_still"               = "Stay still, the image being captured";
+"icar_sdk_placeDocInsideBox"        = "Place the document inside the box";
+"icar_sdk_please_come_closer"       = "PLEASE, COME CLOSER";
+"icar_sdk_ok_stay_still"            = "OK!, STAY STILL";
+"icar_sdk_place_face_inside"        = "<strong>PLACE THE FACE INSIDE</strong>";
+"icar_sdk_picture_token"            = "PICTURE TOKEN"; //Unused.
+"icar_sdk_lbl_no_credits"           = "ICAR_SDK_ERROR: No credits, please contact with Icar Vision";
+"icar_sdk_go_back"                  = "PLEASE, <strong>GO BACK</strong>";
+"icar_sdk_blink_eyes"               = "PLEASE, <strong>BLINK EYES</strong>";
+"icar_sdk_accept_thanks"            = "<strong>ACCEPTED THANK YOU</strong>";
+"icar_sdk_turn_head_left_right"     = "TURN YOUR HEAD LEFT AND RIGHT"; //Unused.
+"icar_sdk_please_look_front"        = "PLEASE LOOK FRONT"; //Unused.
+"icar_sdk_turn_head_oher_side"      = "TURN YOUR HEAD THE OTHER SIDE"; //Unused.
+"icar_sdk_please_be_serious"        = "PLEASE BE SERIOUS"; //Unused.
+"icar_sdk_big_smile"                = "BIG SMILE! :-)"; //Unused.
+"icar_sdk_yes"                      = "YES";
+"icar_sdk_not"                      = "NOT";

@@ -1,0 +1,6 @@
+framework module IcarSDK {
+  umbrella header "IcarSDK.h"
+
+  export *
+  module * { export * }
+}

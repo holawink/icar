@@ -1,0 +1,105 @@
+=----------------------------------=
+-----   IcarMobile SDK iOS  --------
+=----------------------------------=
+
+===> Version 1.5.18
+- Afegir nou exemple OfflineProcessing.
+- Modificació de la documentació.
+
+
+===> Version 1.5.17
+- Corregit bug de memoria en els processos faceLiveness i autofoto. El protocal icarCapture ha d'estar com a property weak. I les imatges sense utilizar imagenamed.
+
+
+===> Version 1.5.16
+- Afegit "trim spaces from end" en els camps llegits del webservice.
+- S'ha passat a la numeració de versió amb només 3 digits definit en el IcarSDK.xcodeproj/General/Identity/Version.
+- Obtenir Srting_XML del deviceInfo (IdCloud_LocalImages::getDeviceInfo:(int) _imgPos withConf:(IdCloud_Configuration*) _conf)
+- Afegit emailToCheck i phoneNumberToCheck en IdCloud_Configuration, per ser enviat en el xml al IdCloud server.
+- Afegit dos camps en el AllFeatures sample per poder enviar icarPhoneNumberToCheck i icarEmailToCheck.
+- Afegida a la documentació aquest dos nous camps.
+
+
+===> Version 1.5.1.5
+- Afegit el nou disseny gràfic pels processos autofoto i selfie-liveness. Maquetat amb .xib i codi %.
+- Modificat textos per una sola linea i possibilitat de fer-los en bold (autofoto i face-liveness).
+
+
+===> Version 1.5.1.4
+- S'ha tret Microblink framework i tot el codi a l'espera de tenir llicència d'aquesta empresa (manteniment innecessari de codi).
+- S'ha modificat el projecte SDK per tal de ser un framework i no pas una llibreria estàtica. Tots els recursos ara estan posats dintre del framework i s'han modificat les referències dsd el codi amb el bundle.
+- IMPORTANT: amb aquesta modificació compatible a partir de ios 8.
+- S'ha fet un script que executi lipo del framework per poder tenir versió simulator/device.
+- S'hauria de distribuir només el .framework sense lipo o el script detallat abaix d'aquest historial de versions.
+
+
+===> Version 1.5.1.3
+- En el IcarCapture_Base_VC.mm hi havia un bug en observeValueForKeyPath que feia tornar a capturar si if (bCaptureImageOnFinishedAutoFocus && !adjustingFocus). Ara si ja s'ha capturat es posa bCaptureImageOnFinishIcarSDK.frameworkedAutoFocus a false.
+- Per evitar possibles duplicitat del fitxer NSData+CommonCrypto.h, s'ha afegit el prefix "Icar" en totes les definicions.
+
+
+===> Version 1.5.1.2
+- Enviant la versió del sdk en les connexions a IdCloudServer i PaymentServer.
+- Reorganitzant físicament codi del projecte SDK.
+- Afegint diàleg customitzat al finalitzar el procés d'autofoto amb èxit.
+
+
+===> Version 1.5.1.1
+- Afegint customitzacions Customized_AutoFoto en IcarCapture_Configuration.
+- Refactoritzant el codi de captura.
+- Modificada la posició del back button en el procés de captura autofoto. Ara està situat upper left corner.
+
+
+===> Version 1.5.1.0
+- En la aplicació IDMobile s'ha afegit l'accés amb protocol no segur http://192.168.1.15
+- Modificat el procés autofoto:
+    - Més gran el requadre per capturar el document.
+    - un cop detectat el document, missatge a l'usuari dient que estigui quiet que s'està a punt de realitzar la foto.
+    - La vibració es realitza en finalitzar el procés.
+- actualitzat el clientCert.pfx amb data de caducitat 25/11/2018.
+- modificat en el procés d'autofoto un temps d'espera per poder capturar imatge final amb més llum (afegit un delay de 1'5segons per gestionar millor el canvi de video a image).
+
+
+===> Version 1.5.0.0
+- Afegit AutoFoto en el Documentation Capture.
+
+
+===> Version 1.4.0.1
+- afegit icarLicenseKey per totes les funcionalitats del SDK.
+- modificada documentació per descriure com configurar icarLicenseKey.
+- modificat el disseny gràfic del procés face detection, pel mode normal com també liveness.
+- actualitzat el clientCert.pfx amb data de caducitat 11/07/2018.
+- Modificar la nota tècnica amb bundleid (fet per l'Eva).
+
+
+===> Version 1.4.0.0
+- afegit face detection with liveness
+
+
+===> Version  1.3.2.7
+- modificat el script del target Universal_icarSDK_idCloud per tal que torni a funcionar el lipo i en simulador les arquitectures i386 i x86_64.
+
+
+===> Version  1.3.2.6
+- actualizado el clientCert.pfx con fecha de caducidad 14/04/2018.
+
+
+===> Version  1.3.2.5
+- actualizado el clientCert.pfx con fecha de caducidad 1/1/2018. Conexión con fecha de caducidad sólo para el módulo de compras offline.
+- añadido en el documento (ManualReferencia_iOS-SDK_IdCloud.docx/4.2. SERVIDOR ICAR_PAYMENT) la fecha de caducidad del certificado.
+- modificación del canal alpha en la máscara del face detection.
+
+
+===> Version  1.3.2.4
+- al parsear datos de cloudServer IdCloud_DataResult::getAllFields en didEndElement si ya existe m_sParserCode concatenar valor (antes las lineas del mrz no se concatenaban).
+
+
+===> Version  1.3.2.3
+- recorte de la imagen de entrada en lectura offline de MRZ.
+- función IdCloud_Connection::synchronizePDF417WithKey para parsear fichero @"http://www.icarvision.com/sdkMobile/icarSDK_Mobile.xml"
+
+
+===> Version  1.3.2.1
+- función IcarPayment_Manager::clearLocalProcesses para limpiar número de procesos (sobretodo uso interno de icar del sdk).
+
+
